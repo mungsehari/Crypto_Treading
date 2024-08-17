@@ -1,7 +1,12 @@
-FROM openjdk:21-slim
-ADD target/treading-0.0.1-SNAPSHOT.jar treading-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/treading-0.0.1-SNAPSHOT.jar"]
-EXPOSE 5454
 
+FROM openjdk:21-jdk
+
+ARG JAR_FILE=target/*.jar
+
+COPY ${JAR_FILE} treading.jar
+
+ENTRYPOINT ["java","-jar","/treading.jar"]
+
+EXPOSE 8761
 
 
