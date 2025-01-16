@@ -3,11 +3,12 @@ package com.hari.service.Impl;
 import com.hari.config.JwtProvider;
 import com.hari.domin.VerificationType;
 import com.hari.model.TwoFactorAuth;
-import com.hari.model.TwoFactorOtp;
+
 import com.hari.model.User;
 import com.hari.repository.UserRepository;
 import com.hari.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
