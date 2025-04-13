@@ -5,7 +5,7 @@ import com.hari.domin.USER_ROLE;
 import jakarta.persistence.*;
 import lombok.Data;
 
-@Entity
+@Entity(name = "users")
 @Data
 public class User {
     @Id
